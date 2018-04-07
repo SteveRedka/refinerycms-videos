@@ -1,4 +1,4 @@
-class VideosTranslations < ActiveRecord::Migration
+class VideosTranslations < ActiveRecord::Migration[4.2]
 def up
     Refinery::Videos::Video.create_translation_table!({
       :title => :string,
